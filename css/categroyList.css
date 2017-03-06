@@ -1,0 +1,97 @@
+body {
+  background: #F5F5F5;
+}
+body .mmm_productlist {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+body .mmm_productlist .mmm_nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(to bottom, #fcfcfc, #dedede);
+  padding: 0 10px;
+}
+body .mmm_productlist .mmm_nav div {
+  display: inline-block;
+}
+body .mmm_productlist .mmm_nav .filter {
+  float: right;
+  width: 60px;
+  height: 30px;
+  margin: 5px 0;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #D8D8D8, #F4F4F4);
+  border: 1px solid #D8D8D8;
+}
+body .mmm_productlist .mmm_section {
+  background-color: #fff;
+  margin-top: 10px;
+}
+body .mmm_productlist .mmm_section #goods_display .goods {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #F5F5F5;
+  padding: 5px 10px;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_pic {
+  width: 15%;
+  max-height: 100px;
+  line-height: 100px;
+  float: left;
+  display: block;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_pic img {
+  width: 100%;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_detail {
+  width: 80%;
+  height: 100px;
+  float: right;
+  padding: 5px 5px;
+  position: relative;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_detail .price {
+  color: #FF6C00;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_detail .detail_others {
+  width: 100%;
+  padding-right: 5px;
+  font: 10px "simsun";
+  bottom: 10px;
+  position: absolute;
+}
+body .mmm_productlist .mmm_section #goods_display .goods .goods_detail .detail_others a {
+  color: lightgray;
+}
+body .mmm_productlist .mmm_section .skip {
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  text-align: center;
+}
+body .mmm_productlist .mmm_section .skip span {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ececec;
+  border-radius: 5px;
+  float: left;
+  margin: 0 10px;
+  border: 1px solid #BABABA;
+  box-shadow: 0 1px 5px -1px #BABABA;
+  cursor: pointer;
+}
+body .mmm_productlist .mmm_section .skip span:last-child {
+  float: right;
+}
+body .mmm_productlist .mmm_section .skip select {
+  width: 70px;
+  height: 30px;
+}

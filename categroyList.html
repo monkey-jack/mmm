@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>list</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/categroyList.css">
+    <link rel="stylesheet" href="lib/font/top/iconfont.css">
+    <script src="lib/template.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/categroyList.js"></script>
+    <script type="text/html" id="categroy_list">
+        {{if result}}
+        {{each result as value i}}
+            <div class="goods">
+                <div class="goods_pic">
+                    {{#value.productImg}}
+                </div>
+                <div class="goods_detail">
+                    <a href="details.html?productid={{value.productId}}" class="detail_title">{{value.productName}}</a>
+                    <p class="price">{{value.productPrice}}</p>
+                    <p class="detail_others">
+                        <a href="#" class="quoted_price">{{value.productQuote}}</a>
+                        <a href="#" class="comment">{{value.productCom}}</a>
+                    </p>
+                </div>
+            </div>
+        {{/each}}
+        {{/if}}
+    </script>
+</head>
+<body>
+<div class="mmm_productlist">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            <a href="index.html"></a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品" class="search_input">
+            <input type="button" value="搜索" class="btn">
+        </div>
+    </header>
+
+    <!--面包屑点航-->
+    <nav class="mmm_nav">
+        <div class="navgation">
+            <a href="index.html">首页</a>&gt;
+            <a href="category.html">全部分类</a>&gt;
+            <a href="#" id="nav_list">电视</a>&gt;
+        </div>
+        <div class="filter">筛选</div>
+    </nav>
+
+    <section class="mmm_section">
+        <div id="goods_display">
+
+        </div>
+
+        <div class="skip">
+            <span id="previous_page" >上一页</span>
+            <select id="select" onchange="tog(this)"></select>
+            <script>
+                var pageid;
+                function tog(sel) {
+                    pageid=sel.value;
+                }
+            </script>
+            <span id="next_page" >下一页</span>
+        </div>
+    </section>
+
+    <!--页脚部分-->
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

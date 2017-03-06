@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/baseTwo.css">
+    <link rel="stylesheet" href="css/brandProduct.css">
+</head>
+<body>
+<header id="/native">
+    <div class="logo">
+        <s>
+            <img src="images/header_logo.png">
+        </s>
+        <span>
+        <img src="images/header_app.png">
+      </span>
+    </div>
+    <div class="common_search">
+        <input type="text" placeholder="请输入你想比价的商品" class="inp">
+        <input type="button" value="搜索" class="btn">
+    </div>
+</header>
+<!-- 导航条开始-->
+<div class="filtrate">
+    <span><a href="index.html">首页</a></span>
+    <span>&gt;</span>
+    <span><a href="#">全部分类</a></span>
+    <span> &gt; </span>
+</div>
+<!-- 导航条结束-->
+<!-- 品牌-->
+
+
+<!-- 列表 -->
+<div class='list'>
+    <!--<div id='num'>-->
+        <!--<div class="left">1</div>-->
+        <!--<div class="right">-->
+            <!--<p>角度看撒赖扩大就</p>-->
+            <!--<p>asda看拉开距离</p>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<!-- 列表 end -->
+
+
+<!-- 销量排行开始 -->
+<div class='sell'>
+
+</div>
+<!-- 销量排行结束 -->
+
+<!-- 详情页开始-->
+<div class='deta'>
+
+</div>
+
+<!-- 详情页结束-->
+
+
+
+<!-- 底部 开始-->
+<div class="footer clearfix">
+    <ul>
+        <li><a href="#">  登陆</a></li>
+        <li><a href="#">  注册</a></li>
+        <li><a href="#/native"> 返回顶部</a></li>
+    </ul>
+    <div>
+        <p><i>
+            <a href="#">电视 &gt;</a>
+        </i>慢慢买手机版 -- 掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+
+</div>
+</body>
+<script src='lib/jquery/jquery.js'></script>
+<script src='lib/template.js'></script>
+<script src='js/brandProduct.js'></script>
+
+<!--模板开始-->
+<script type=text/html id='small'>
+    {{each result as v i}}
+    <div class='num clearfix' href=''>
+        <div class="left"><span>{{i+1}}</span></div>
+        <div class="right">
+            <p>{{v.brandName}}</p>
+            <p>{{v.brandInfo}}</p>
+        </div>
+        <i></i>
+    </div>
+    {{/each}}
+</script>
+<script type=text/html id='smal'>
+    {{each result as v i}}
+    <div class='num clearfix'>
+        <div class="left">{{#v.productImg}}</div>
+        <div class="right">
+            <p>{{v.productName}}</p>
+            <p>
+                <span>{{v.productPrice}}</span>
+                <span>★★★★★</span>
+            </p>
+            <p>{{v.productQuote}}{{v.productCom}}</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+
+<script type=text/html id='sma'>
+    {{each res as v i}}
+    <div class='num clearfix'>
+        <div class="left">{{#v.productImg}}</div>
+        <div class="right">
+            <p>{{v.productName}}</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type=text/html id='sm'>
+    {{each result as v i}}
+    <div class='nu clearfix'>
+       <p class='clearfix'>
+           <span>{{v.comName}}</span>
+           <span>★★★★★</span>
+           <span>{{v.comTime}}</span>
+       </p>
+        <p>{{v.comContent}}</p>
+    </div>
+    {{/each}}
+</script>
+
+</html>

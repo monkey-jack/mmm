@@ -1,0 +1,112 @@
+body {
+  background-color: #F5F5F5;
+}
+body #mask {
+  display: none;
+  position: absolute;
+  top: 0px;
+  background-color: #777;
+  z-index: 1;
+  left: 0px;
+  opacity: 0.9;
+  -moz-opacity: 0.5;
+}
+body #mask .box {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+}
+body #mask .box .btn {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 65px;
+  line-height: 50px;
+  text-align: center;
+  font: bold 60px "simsun";
+  background-color: black;
+  top: 200px;
+  color: #bfbfbf;
+}
+body #mask .box #btnLeft {
+  left: 20px;
+}
+body #mask .box #img {
+  position: absolute;
+  width: 50%;
+  display: inline-block;
+  top: 150px;
+  left: 25%;
+  text-align: center;
+}
+body #mask .box #img img {
+  width: 100%;
+}
+body #mask .box #btnRight {
+  right: 20px;
+}
+body .mmm_couponproduct {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body .mmm_couponproduct .mmm_header {
+  height: 50px;
+}
+body .mmm_couponproduct .mmm_header .title {
+  background-color: #F4483E;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font: bold 20px/50px "simsun";
+}
+body .mmm_couponproduct .mmm_header .title a:nth-last-child(2) {
+  width: 50px;
+  background: url("") 0 center no-repeat;
+  color: #fff;
+  font: bold 30px/50px "simsun";
+  margin-left: 0px;
+  float: left;
+}
+body .mmm_couponproduct h4 {
+  text-align: center;
+  color: #c1c1c1;
+  background-color: #fff;
+  font: normal 15px 'simsun';
+  padding: 10px;
+}
+body .mmm_couponproduct .mmm_section .listcoupon {
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 2px;
+  position: relative;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .sectionLeft {
+  float: left;
+  width: 30%;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .sectionLeft img {
+  width: 100%;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .sectionRight {
+  float: left;
+  width: 65%;
+  padding: 10px;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .sectionRight .money {
+  font: bold 15px "simsun";
+  margin: 10px 0;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .sectionRight .date {
+  font-size: 12px;
+  color: #F08E2B;
+}
+body .mmm_couponproduct .mmm_section .listcoupon .btn {
+  float: right;
+  width: 5%;
+  font: bold 25px "simsun";
+  color: darkgray;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}

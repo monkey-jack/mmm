@@ -1,0 +1,38 @@
+body {
+  background-color: #F5F5F5;
+}
+body .mmm_sitenav {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body .mmm_sitenav .mmm_header {
+  height: 50px;
+}
+body .mmm_sitenav .mmm_header .title {
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font: bold 20px/50px "simsun";
+}
+body .mmm_sitenav .mmm_header .title a:nth-last-child(2) {
+  width: 50px;
+  background: url("") 0 center no-repeat;
+  color: #fff;
+  font: bold 30px/50px "simsun";
+  margin-left: 0px;
+  float: left;
+}
+body .mmm_sitenav .mmm_section {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+body .mmm_sitenav .mmm_section .shop {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  background-color: #d2d2d2;
+  margin: 2px;
+  padding: 0 10px;
+  border: 1px solid #9f9f9f;
+}

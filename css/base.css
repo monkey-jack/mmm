@@ -1,0 +1,164 @@
+/*reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致*/
+/*所有的标签和伪类  before after*/
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+
+    /*在移动端特殊的设置*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "MicroSoft YaHei","sans-serif";/*是设备默认的字体*/
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /*特殊的属性定义  清除浏览器给input自带的样式*/
+    -webkit-appearance: none;/*组件默认的样式空*/
+}
+/*common css  也就是我们公用的css*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before{
+    content: ".";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*顶部通栏*/
+
+/*logo标志和下载app入口*/
+.mmm_header{
+    width: 100%;
+    height: 100px;
+
+}
+.mmm_header .title{
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+}
+.mmm_header .title a:first-child{
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    background: url("../images/header_logo.png") 0 center no-repeat;
+    background-size: 50%;
+    margin-left: 10px;
+    float: left;
+}
+.mmm_header .title a:last-child{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: url("../images/header_app.png") center center no-repeat;
+    background-size: 60%;
+    float: right;
+}
+
+/*search部分*/
+.mmm_header .search{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+.mmm_header .search .search_input{
+    width: 70%;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.mmm_header .search .btn{
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FF841D;
+    margin-left: 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/*点击加载更多*/
+.mmm_section .more{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background-color: #fff;
+}
+.mmm_section .more .tip{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: #F6F6F6;
+}
+
+/*页脚部分*/
+.mmm_footer{
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    padding-bottom: 20px;
+}
+.mmm_footer .message{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background-color: #F5F5F5;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 10px;
+}
+.mmm_footer .message a{
+    display: inline-block;
+    width: 32%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid darkgray;
+}
+.mmm_footer .message a:last-child{
+    border: 0px solid #000;
+}
+.mmm_footer p{
+    text-align: center;
+}
+.mmm_footer .app{
+    color: red;
+}
+.mmm_footer .stage{
+    color: grey;
+}

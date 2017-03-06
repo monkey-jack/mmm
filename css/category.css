@@ -1,0 +1,49 @@
+body {
+  background: #F5F5F5;
+}
+body .mmm_sort {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+body .mmm_sort .mmm_section .module h3 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #d8d8d8;
+  padding: 0 10px;
+  background-color: #EDEDED;
+}
+body .mmm_sort .mmm_section .module h3 i {
+  display: inline-block;
+  float: right;
+}
+body .mmm_sort .mmm_section .module h3 i:hover {
+  color: #FF841D;
+}
+body .mmm_sort .mmm_section .module ul {
+  width: 100%;
+  text-align: center;
+  background-color: #F9F9F9;
+  display: none;
+}
+body .mmm_sort .mmm_section .module ul li {
+  width: 33.33%;
+  height: 30px;
+  line-height: 20px;
+  float: left;
+  background-color: #F9F9F9;
+  border-bottom: 2px solid #d8d8d8;
+  border-right: 2px solid #d8d8d8;
+}
+body .mmm_sort .mmm_section .module ul li a {
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+body .mmm_sort .mmm_section .module ul li:nth-child(3n) {
+  border-right: 0;
+}

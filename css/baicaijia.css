@@ -1,0 +1,142 @@
+body {
+  background-color: #F5F5F5;
+}
+body .mmm_baicaijia {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body .mmm_baicaijia .mmm_header {
+  height: 50px;
+}
+body .mmm_baicaijia .mmm_header .title {
+  background-color: #F4483E;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font: bold 20px/50px "simsun";
+}
+body .mmm_baicaijia .mmm_header .title a:first-child {
+  width: 50px;
+  background: url("") 0 center no-repeat;
+  color: #fff;
+  font: bold 30px/50px "simsun";
+  margin-left: 0px;
+}
+body .mmm_baicaijia .mmm_nav {
+  width: 100%;
+  overflow: hidden;
+}
+body .mmm_baicaijia .mmm_nav ul {
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+body .mmm_baicaijia .mmm_nav ul li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+body .mmm_baicaijia .mmm_nav ul .choose {
+  border-bottom: 2px solid #F4483E;
+  color: #F4483E;
+}
+body .mmm_baicaijia .mmm_section {
+  background-color: #fff;
+}
+body .mmm_baicaijia .mmm_section .goods {
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+  padding: 5px 10px;
+}
+body .mmm_baicaijia .mmm_section .goods .imgshow {
+  width: 30%;
+  float: left;
+  overflow: hidden;
+}
+body .mmm_baicaijia .mmm_section .goods .imgshow img {
+  width: 100%;
+}
+body .mmm_baicaijia .mmm_section .goods .info {
+  width: 70%;
+  height: 140px;
+  position: relative;
+  float: right;
+  padding-left: 10px;
+}
+body .mmm_baicaijia .mmm_section .goods .info p:nth-child(2) {
+  position: absolute;
+  bottom: 60px;
+  font-size: 18px;
+  color: #FC353A;
+}
+body .mmm_baicaijia .mmm_section .goods .info p:nth-child(2) i {
+  font: normal 15px "simsun";
+}
+body .mmm_baicaijia .mmm_section .goods .info p:nth-child(2) em {
+  font: normal 15px "microsoft yahei";
+  margin-right: 5px;
+}
+body .mmm_baicaijia .mmm_section .goods .info p:nth-child(2) del {
+  font-size: 15px;
+  color: lightgray;
+  margin-left: 20px;
+}
+body .mmm_baicaijia .mmm_section .goods .info .bar {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+}
+body .mmm_baicaijia .mmm_section .goods .info .bar i {
+  display: inline-block;
+  width: 35%;
+  height: 15px;
+  border: 1px solid #FC353A;
+  border-radius: 7px;
+  background-color: #FFB7B7;
+  position: relative;
+  overflow: hidden;
+}
+body .mmm_baicaijia .mmm_section .goods .info .bar i span {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  left: calc(48%);
+  height: 15px;
+  display: inline-block;
+}
+body .mmm_baicaijia .mmm_section .goods .info .bar i em {
+  background-color: #FC353A;
+  display: inline-block;
+  height: 15px;
+}
+body .mmm_baicaijia .mmm_section .goods .info .bar b {
+  font-size: 12px;
+  color: #FFB7B7;
+  padding: 15px;
+}
+body .mmm_baicaijia .mmm_section .goods .info a:nth-last-child(2) {
+  display: inline-block;
+  height: 25px;
+  border: 2px dotted #FFB7B7;
+  padding: 5px;
+  line-height: 10px;
+  font-size: 15px;
+  color: #FC353A;
+  position: absolute;
+  bottom: 10px;
+}
+body .mmm_baicaijia .mmm_section .goods .info a:last-child {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #FC353A;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

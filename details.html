@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="lib/font/top/iconfont.css">
+    <script src="lib/template.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/details.js"></script>
+    <script type="text/html" id="shop">
+        {{if result}}
+        {{each result as value i}}
+        <p class="title">{{value.productName}}</p>
+        <div class="pic">
+            {{#value.productImg}}
+        </div>
+        {{/each}}
+        {{/if}}
+    </script>
+    <script type="text/html" id="commit">
+        {{if result}}
+        {{each result as value i}}
+        <div class="comment">
+            <p class="clearfix"><span class="name">{{value.comName}}</span><span class="time">{{value.comTime}}</span></p>
+            <p class="clearfix"><span>{{value.comFrom}}</span></p>
+            <p>{{value.comContent}}</p>
+        </div>
+        {{/each}}
+        {{/if}}
+    </script>
+
+</head>
+<body>
+<div class="mmm_details">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            <a href="index.html"></a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品" class="search_input">
+            <input type="button" value="搜索" class="btn">
+        </div>
+    </header>
+
+    <!--面包屑点航-->
+    <nav class="mmm_nav">
+        <div class="navgation">
+            <a href="index.html">首页</a>&gt;
+            <span id="nav_2" onclick="window.history.go(-1)">电视</span>&gt;
+            <span id="nav_3" href="#">乐视</span>&gt;
+        </div>
+        <div class="filter">筛选</div>
+    </nav>
+
+    <!--详情列表-->
+    <section class="mmm_section">
+        <div id="message">
+        </div>
+
+        <div class="lab clearfix">
+            <div class="compare">比价购买</div>
+            <div class="args">产品参数</div>
+            <div class="comment">评价(2322)</div>
+        </div>
+
+        <div id="table">
+        </div>
+
+        <div class="net_friend">网友评价</div>
+
+        <div id="comment_model">
+        </div>
+
+        <div class="more">
+            <div class="tip">查看更多评价&gt;&gt;</div>
+        </div>
+
+    </section>
+
+    <!--页脚部分-->
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

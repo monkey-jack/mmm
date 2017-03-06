@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优惠券</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="lib/font/top/iconfont.css">
+    <link rel="stylesheet" href="lib/font/xiaoxi/iconfont.css">
+    <link rel="stylesheet" href="css/coupon.css">
+    <script src="lib/template.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/coupon.js"></script>
+    <script type="text/html" id="couponDisplay">
+        {{if result}}
+        {{each result as value i}}
+        <a href="{{value.couponLink}}?couponid={{value.couponId}}&coupontitle={{value.couponTitle}}">
+            <img src="{{value.couponImg}}" alt="">
+            <p>{{value.couponTitle}}</p>
+        </a>
+        {{/each}}
+        {{/if}}
+    </script>
+</head>
+<body>
+<div class="mmm_coupon">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            优惠券
+            <a href="index.html">&lt;</a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+    </header>
+
+
+    <div class="mmm_section">
+
+    </div>
+
+
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

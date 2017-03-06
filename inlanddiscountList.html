@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国内折扣展示列表</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="lib/font/top/iconfont.css">
+    <link rel="stylesheet" href="lib/font/xiaoxi/iconfont.css">
+    <link rel="stylesheet" href="css/moneyctrlList.css">
+    <script src="lib/template.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/moneyctrlList.js"></script>
+    <script type="text/html" id="intro">
+        {{if result}}
+        {{each result as value i}}
+        <h3>{{value.productName}}</h3>
+        <p><span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span>{{value.productTips}}</span></p>
+        <div class="intro">
+
+            <div id="goodsdetial">
+                {{#value.productImg}}
+                {{value.productInfo}}
+                <div class="lg">
+                    <p>{{value.productInfo1}}</p>
+                    <div class="bgImg clearfix">
+                        {{#value.productImg}}
+                    </div>
+                </div>
+
+                {{#value.productCity}}
+            </div>
+
+            <div class="goBuy">
+                前往购买
+            </div>
+
+            <img class="weixin" src="images/mmbweixin2.png" alt="">
+
+            <div id="comment">
+                {{#value.productComment}}
+            </div>
+        </div>
+        {{/each}}
+        {{/if}}
+    </script>
+</head>
+
+<!--HTML结构 和 css 样式 完全和moneyctrl一样，公用一个css样式即可-->
+
+<body>
+<div class="mmm_saveMoneyList">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            省钱控 - 最新优惠
+            <a href="index.html">&lt;</a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+    </header>
+
+    <section class="mmm_section">
+        <div id="sectionIntro">
+
+        </div>
+    </section>
+
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

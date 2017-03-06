@@ -1,0 +1,124 @@
+body {
+  background-color: #F5F5F5;
+
+  #mask {
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: #777;
+    z-index: 1;
+    left: 0px;
+    opacity: 0.9;
+    -moz-opacity: 0.5;
+    .box{
+      width: 100%;
+      height: 400px;
+      position: fixed;
+      .btn{
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        height: 65px;
+        line-height: 50px;
+        text-align: center;
+        font: bold 60px "simsun";
+        background-color: black;
+        top:200px;
+        color: #bfbfbf;
+      }
+      #btnLeft{
+        left: 20px;
+      }
+      #img{
+        position: absolute;
+        width: 50%;
+        display: inline-block;
+        //left: 50%;
+        top: 150px;
+        left: 25%;
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+      #btnRight{
+        right: 20px;
+      }
+    }
+
+  }
+
+  .mmm_couponproduct {
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    .mmm_header {
+      height: 50px;
+      .title {
+        background-color: #F4483E;
+        line-height: 50px;
+        color: #fff;
+        text-align: center;
+        font: bold 20px/50px "simsun";
+        a:nth-last-child(2) {
+          width: 50px;
+          background: url(".") 0 center no-repeat;
+          color: #fff;
+          font: bold 30px/50px "simsun";
+          margin-left: 0px;
+          float: left;
+        }
+      }
+    }
+
+    h4 {
+      text-align: center;
+      color: #c1c1c1;
+      background-color: #fff;
+      font: normal 15px 'simsun';
+      padding: 10px;
+    }
+
+    .mmm_section {
+      .listcoupon {
+        background-color: #fff;
+        padding: 10px 0 10px 10px;
+        margin-bottom: 2px;
+        position: relative;
+        .sectionLeft {
+          float: left;
+          width: 30%;
+          img {
+            width: 100%;
+          }
+        }
+        .sectionRight {
+          float: left;
+          width: 65%;
+          padding: 10px;
+          .money {
+            font: bold 15px "simsun";
+            margin: 10px 0;
+          }
+          .date {
+            font-size: 12px;
+            color: #F08E2B;
+          }
+        }
+
+        .btn {
+          float: right;
+          width: 5%;
+          font: bold 25px "simsun";
+          color: darkgray;
+          position: absolute;
+          top: 40%;
+          right: 0;
+        }
+
+      }
+    }
+
+  }
+}

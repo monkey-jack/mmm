@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凑单品</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/font/search/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="lib/font/top/iconfont.css">
+    <link rel="stylesheet" href="lib/font/xiaoxi/iconfont.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <script src="lib/template.js"></script>
+    <script src="js/gsproduct.js"></script>
+
+    <script type=text/html id=shopPlt>
+        {{if result}}
+        {{each result as value i}}
+        <option id={{value.shopId}}>{{value.shopName}}</option>
+        {{/each}}
+        {{/if}}
+    </script>
+
+    <script type=text/html id=areaPlt>
+        {{if result}}
+        {{each result as value i}}
+        <option id={{value.areaId}}>{{value.areaName}}</option>
+        {{/each}}
+        {{/if}}
+    </script>
+
+    <script type=text/html id=listPlt>
+        {{if result}}
+        {{each result as value i}}
+        <div class="goodsList">
+            <div class="img">
+                <img src={{value.productImg}} alt="">
+            </div>
+            <p>{{value.productName}}</p>
+            <p><span class=money>{{value.productPrice}}</span><span class=buy>去凑单</span></p>
+        </div>
+        {{/each}}
+        {{/if}}
+</script>
+
+</head>
+<body>
+<div class="mmm_gsproduct">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            <span id="couponTitle">凑单品</span>
+            <a href="index.html">&lt;</a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+    </header>
+
+    <nav class="mmm_nav clearfix">
+
+        <select id=shop>
+        </select>
+
+        <select id=area>
+        </select>
+
+        <select id=price>
+            <option>全部价格</option>
+        </select>
+
+        <i class="iconfont icon-group47"></i>
+
+    </nav>
+
+    <div class="mmm_section clearfix">
+    </div>
+
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

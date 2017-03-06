@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>分类页</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" type="text/css" href="lib/font/top/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="lib/font/direction/iconfont.css">
+    <script src="lib/template.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/category.js"></script>
+    <script type="text/html" id="commodity">
+        {{if result}}
+        {{each result as value i}}
+        <div class="module">
+            <h3>{{value.title}}<i class="iconfont icon-xia"></i></h3>
+            <ul id="list_{{value.titleId}}" class="list clearfix">
+
+            </ul>
+        </div>
+        {{/each}}
+        {{/if}}
+    </script>
+    <script type="text/html" id="shopList">
+        {{if result}}
+        {{each result as value i}}
+        <li><a href="categroyList.html?categroyid={{value.categoryId}}">{{value.category}}</a></li>
+        {{/each}}
+        {{/if}}
+    </script>
+</head>
+<!-- categroyList.html?categroyid={{value.categoryId}} -->
+<body>
+<div class="mmm_sort">
+    <header class="mmm_header" name="top">
+        <div class="title">
+            <a href="index.html"></a>
+            <a href="http://m.manmanbuy.com/?o=download"></a>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品" class="search_input">
+            <input type="button" value="搜索" class="btn">
+        </div>
+    </header>
+
+    <section class="mmm_section" id="commodity_list">
+    </section>
+
+    <footer class="mmm_footer">
+        <div class="message">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a id="back" href="#top"><i class="iconfont icon-CombinedShapeCopy"></i>返回顶部</a>
+        </div>
+        <p><a href="http://m.manmanbuy.com/?o=download" class="app">手机APP下载</a><a href="index.html"> 慢慢买手机版 -- </a><span
+                class="stage">掌上比价平台</span></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </footer>
+</div>
+</body>
+</html>
